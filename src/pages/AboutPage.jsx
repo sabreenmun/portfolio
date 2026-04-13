@@ -1,8 +1,9 @@
 import aboutImage from "../assets/images/sabreen.jpg";
+
 const AboutPage = () => {
   return (
-    <main className="px-10 py-20">
-      <div className="flex flex-col lg:flex-row gap-12 items-start">
+    <main className="px-10 py-20 min-h-screen">
+      <div className="flex flex-col lg:flex-row gap-40 items-start">
         {/* LEFT - TEXT */}
         <div className="max-w-xl">
           <h1 className="text-2xl font-medium mb-10">About</h1>
@@ -26,7 +27,7 @@ const AboutPage = () => {
 
             <p>
               I often color grade my images with warmer tones to enhance the
-              mood and preserve the feeling of the scene. 
+              mood and preserve the feeling of the scene.
             </p>
 
             <p>
@@ -38,7 +39,7 @@ const AboutPage = () => {
         </div>
 
         {/* RIGHT - IMAGE */}
-        <div className="w-full lg:w-[400px] aspect-square">
+        <div className="w-full lg:w-[300px] aspect-[4/5]">
           <img src={aboutImage} alt="" className="w-full h-full object-cover" />
         </div>
       </div>

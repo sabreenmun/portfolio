@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "tailwindcss";
-
 * {
   box-sizing: border-box;
 }
@@ -15,14 +13,6 @@ body,
   overflow-x: hidden;
 }
 
-/* hide scrollbar but still allow scrolling */
-::-webkit-scrollbar {
-  display: none;
-}
-
-html {
-  scrollbar-width: none; /* Firefox */
-}
 
 img,
 video,
