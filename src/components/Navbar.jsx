@@ -1,21 +1,23 @@
+import { Link } from "react-router-dom";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 const Navbar = () => {
   return (
-    <nav className="flex flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between">
+    <nav className="relative flex flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between">
       
-      {/* LOGO */}
-      <div className="text-center text-lg font-medium tracking-wide md:text-left">
-        <Link to="/">Sabreen Munassar</Link>
-      </div>
-
-      {/* LINKS */}
-      <div className="flex flex-wrap justify-center gap-4 text-sm">
+      {/* LEFT */}
+      <div className="flex flex-wrap justify-center gap-4 text-sm md:justify-start">
         <Link to="/photography">Photography</Link>
         <Link to="/other">Other Work</Link>
         <Link to="/guide">Guide</Link>
         <Link to="/about">About</Link>
       </div>
 
-      {/* ICONS */}
+      {/* CENTER */}
+      <div className="text-center text-lg font-medium tracking-wide md:absolute md:left-1/2 md:-translate-x-1/2">
+        <Link to="/">Sabreen Munassar</Link>
+      </div>
+
+      {/* RIGHT */}
       <div className="flex justify-center gap-4 md:justify-end">
         <a
           href="https://instagram.com/sabreennnnnn"
@@ -36,4 +38,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
