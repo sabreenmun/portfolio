@@ -4,18 +4,18 @@ import Home from "./pages/HomePage";
 import Photography from "./pages/PhotographyPage";
 import About from "./pages/AboutPage";
 import Guide from "./pages/GuidePage";
-import OtherPage from "./pages/OtherPage";
+import Design from "./pages/DesignPage";
 import Footer from "./components/Footer";
 const App = () => {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="bg-white text-black">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/guide" element={<Guide />} />
-        <Route path="/other" element={<OtherPage />} />
-         <Route path="/about" element={<About />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer/>
     </div>

@@ -85,7 +85,7 @@ const photos = [
 const PhotographyPage = () => {
   return (
     <main className="bg-white px-8 md:px-10 py-10">
-      <div className="flex flex-col gap-6 md:flex-row">
+      <div className="flex gap-6">
         <Sidebar />
 
         <section className="flex-1">

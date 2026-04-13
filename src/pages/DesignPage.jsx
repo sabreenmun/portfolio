@@ -1,4 +1,4 @@
-const OtherPage = () => {
+const DesignPage = () => {
   return (
     <main className="flex items-center justify-center min-h-[70vh] bg-white text-black">
       
@@ -14,4 +14,4 @@ const OtherPage = () => {
   );
 };
 
-export default OtherPage;
+export default DesignPage;
