@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <aside className="hidden text-sm md:block md:w-32 md:shrink-0">
+    <aside className="hidden md:block md:w-32 md:shrink-0 text-sm">
       <div className="sticky top-10 space-y-6">
         <div className="space-y-2">
           <p className="text-xs uppercase tracking-wide text-gray-400">
@@ -25,7 +25,7 @@ const Sidebar = () => {
 
         <div className="pt-6 text-xs text-gray-500">
           <p>Contact</p>
-          <p className="mt-1 text-black">fotosbysab@gmail.com</p>
+          <p className="mt-1 text-black break-all">fotosbysab@gmail.com</p>
         </div>
       </div>
     </aside>

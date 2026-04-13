@@ -84,12 +84,32 @@ const photos = [
 
 const PhotographyPage = () => {
   return (
-    <main className="bg-white px-8 md:px-10 py-10">
-      <div className="flex gap-6">
+    <main className="bg-white px-4 md:px-10 py-6 md:py-10">
+      <div className="flex flex-col md:flex-row gap-6">
         <Sidebar />
 
         <section className="flex-1">
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
+          {/* Mobile projects nav */}
+          <div className="mb-6 md:hidden">
+            <p className="text-xs uppercase tracking-wide text-gray-400 mb-3">
+              Projects
+            </p>
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              <button className="text-gray-500 hover:text-black">NYC 2025</button>
+              <button className="text-gray-500 hover:text-black">LA 2025</button>
+              <button className="text-gray-500 hover:text-black">Riyadh 2025</button>
+              <button className="text-gray-500 hover:text-black">Coming Soon</button>
+            </div>
+
+            <div className="pt-5 text-xs text-gray-500">
+              <p>Contact</p>
+              <p className="mt-1 text-black break-all">fotosbysab@gmail.com</p>
+            </div>
+          </div>
+
+          {/* Gallery */}
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
             {[...photos]
               .sort(() => Math.random() - 0.5)
               .map((photo, index) => (
@@ -97,7 +117,7 @@ const PhotographyPage = () => {
                   key={index}
                   src={photo}
                   alt=""
-                  className="w-full mb-4 break-inside-avoid object-cover hover:opacity-95 transition"
+                  className="w-full object-cover hover:opacity-95 transition"
                 />
               ))}
           </div>
